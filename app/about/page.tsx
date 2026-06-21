@@ -82,8 +82,8 @@ export default function About() {
             
             {/* Download CV with Icon */}
             <a
-              href="/rsume.pdf" 
-              download="Bernard_Tetteh_Drah_CV.pdf"
+              href="/resume.pdf"
+              download
               className="flex items-center gap-2 px-8 py-3 border border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400 hover:text-black transition-colors duration-200"
             >
               {/* Download Icon SVG */}
