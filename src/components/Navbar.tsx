@@ -29,7 +29,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={"fixed top-0 left-0 w-full z-50 transition-all duration-300 " + (isScrolled ? "bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-md shadow-md" : "bg-transparent")}>
+    <nav className={"fixed top-0 left-0 w-full z-50 transition-all duration-300 " + (isScrolled ? "bg-white/95 dark:bg-[#0a0a0a]/90 backdrop-blur-md shadow-md" : "bg-white/70 dark:bg-transparent border-b border-gray-200/50 dark:border-gray-800/50")}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
         <Link href="/" className="text-cyan-400 font-bold text-xl tracking-widest">
@@ -39,7 +39,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className={"text-sm transition-colors duration-200 " + (pathname === link.href ? "text-cyan-400 font-semibold" : "text-gray-600 dark:text-gray-300 hover:text-cyan-400")}>
+              <Link href={link.href} className={"text-sm font-medium transition-colors duration-200 " + (pathname === link.href ? "text-cyan-400 font-semibold" : "text-gray-800 dark:text-gray-300 hover:text-cyan-400")}>
                 {link.label}
               </Link>
             </li>
@@ -83,20 +83,20 @@ export default function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <span className={"block w-6 h-[2px] bg-white dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "rotate-45 translate-y-2.5" : "")} />
-            <span className={"block w-6 h-[2px] bg-white dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "opacity-0" : "")} />
-            <span className={"block w-6 h-[2px] bg-white dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "-rotate-45 -translate-y-2.5" : "")} />
+            <span className={"block w-6 h-0.5 bg-gray-800 dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "rotate-45 translate-y-2.5" : "")} />
+            <span className={"block w-6 h-0.5 bg-gray-800 dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "opacity-0" : "")} />
+            <span className={"block w-6 h-0.5 bg-gray-800 dark:bg-white rounded-full transition-all duration-300 " + (menuOpen ? "-rotate-45 -translate-y-2.5" : "")} />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu Overlay */}
       {menuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-[#0a0a0a]/95 px-6 pb-6">
+        <div className="md:hidden bg-white/90 dark:bg-[#0a0a0a]/95 px-6 pb-6">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} onClick={() => setMenuOpen(false)} className={"text-sm transition-colors duration-200 " + (pathname === link.href ? "text-cyan-400 font-semibold" : "text-gray-600 dark:text-gray-300 hover:text-cyan-400")}>
+                <Link href={link.href} onClick={() => setMenuOpen(false)} className={"text-sm font-medium transition-colors duration-200 " + (pathname === link.href ? "text-cyan-400 font-semibold" : "text-gray-800 dark:text-gray-300 hover:text-cyan-400")}>
                   {link.label}
                 </Link>
               </li>

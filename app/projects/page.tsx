@@ -36,8 +36,8 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <section className="min-h-screen bg-white dark:bg-[#2e2929] px-6 pb-20">
-      <div className="h-[90px] w-full" />
+    <section className="bg-white dark:bg-[#2e2929] px-6 py-20">
+      <div className="h-24 w-full" />
 
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
                   />
                 ) : (
                   /* Sophisticated "Coming Soon" Gradient Placeholder */
-                  <div className="w-full h-full bg-gradient-to-br from-zinc-300 to-zinc-100 dark:from-zinc-700 dark:to-zinc-800 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500">
+                  <div className="w-full h-full bg-linear-to-br from-zinc-300 to-zinc-100 dark:from-zinc-700 dark:to-zinc-800 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500">
                     <span className="text-5xl mb-2">🚧</span>
                     <span className="text-xs uppercase tracking-wider font-medium bg-black/10 dark:bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                       Coming Soon
