@@ -81,10 +81,9 @@ export default function About() {
             </Link>
             
             {/* Download CV with Icon */}
-            <Link
-              href="/resume.pdf" 
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="/rsume.pdf" 
+              download="Bernard_Tetteh_Drah_CV.pdf"
               className="flex items-center gap-2 px-8 py-3 border border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400 hover:text-black transition-colors duration-200"
             >
               {/* Download Icon SVG */}
@@ -94,7 +93,7 @@ export default function About() {
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
               Download CV
-            </Link>
+            </a>
           </div>
         </motion.div>
 
