@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    id: 1,
-    category: "Accounting Tech",
-    title: "Payment & Tax Management System",
-    description: "A comprehensive Excel-based system for managing customer payment data, calculating taxes (VAT, WHT, Tourism Levy), classifying ledger entries, and generating monthly and yearly business reports for Ghana.",
-    image: "/payment-system.jpg",
-    tech: ["Microsoft Excel", "Data Management", "Tax Compliance", "Financial Reporting"],
-    link: "https://github.com/CREDIT-DRAH",
-  },
+   id: 1,
+   category: "Full Stack",
+   title: "DrahVentures Payment System",
+   description: "A live business payment system built with Next.js and Paystack, supporting MTN MoMo, Telecel Cash and AirtelTigo payments in Ghana. Features a password-protected admin dashboard, transaction history, and Supabase database integration.",
+   image: "/drahventures-payment.png",
+   tech: ["Next.js", "TypeScript", "Paystack", "Supabase", "Tailwind CSS"],
+   link: "https://drahventures-payment-bdiz.vercel.app/",
+},
   {
     id: 2,
     category: "AI Project",
