@@ -24,14 +24,14 @@ const projects = [
     link: "https://github.com/CREDIT-DRAH",
   },
   {
-    id: 3,
-    category: "E-Commerce",
-    title: "E-Commerce Platform",
-    description: "A fully functional e-commerce store with product listings, shopping cart, and payment integration. Currently in active development.",
-    image: null,
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    link: "https://github.com/CREDIT-DRAH",
-  },
+  id: 3,
+  category: "E-Commerce",
+  title: "Purple Shop — Insurance Merchandise Store",
+  description: "A fully functional e-commerce store built for Bernardventures. Features product listings pulled from a live Supabase database, shopping cart with quantity controls, and Paystack payment integration. Built with Next.js and deployed on Vercel.",
+  image: null,
+  tech: ["Next.js", "React", "Tailwind CSS", "Supabase", "Paystack"],
+  link: "https://purple-shop-1iss-qk0rjqsb6-bernard-drahs-projects.vercel.app",
+},
 ];
 
 export default function ProjectsPage() {
