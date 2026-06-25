@@ -28,9 +28,9 @@ const projects = [
   category: "E-Commerce",
   title: "Purple Shop — Insurance Merchandise Store",
   description: "A fully functional e-commerce store built for Bernardventures. Features product listings pulled from a live Supabase database, shopping cart with quantity controls, and Paystack payment integration. Built with Next.js and deployed on Vercel.",
-  image: null,
+  image: "/purple-shop.png",
   tech: ["Next.js", "React", "Tailwind CSS", "Supabase", "Paystack"],
-  link: "https://purple-shop-1iss-qk0rjqsb6-bernard-drahs-projects.vercel.app",
+  link: "https://purple-shop-1iss.vercel.app/",
 },
 ];
 
