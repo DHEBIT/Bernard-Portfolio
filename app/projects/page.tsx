@@ -1,19 +1,21 @@
 "use client";
 
+import { FaGithub } from 'react-icons/fa'
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 const projects = [
   {
-   id: 1,
-   category: "Full Stack",
-   title: "DrahVentures Payment System",
-   description: "A live business payment system built with Next.js and Paystack, supporting MTN MoMo, Telecel Cash and AirtelTigo payments in Ghana. Features a password-protected admin dashboard, transaction history, and Supabase database integration.",
-   image: "/drahventures-payment.png",
-   tech: ["Next.js", "TypeScript", "Paystack", "Supabase", "Tailwind CSS"],
-   link: "https://drahventures-payment-bdiz.vercel.app/",
-},
+    id: 1,
+    category: "Full Stack",
+    title: "DrahVentures Payment System",
+    description: "A live business payment system built with Next.js and Paystack, supporting MTN MoMo, Telecel Cash and AirtelTigo payments in Ghana. Features a password-protected admin dashboard, transaction history, and Supabase database integration.",
+    image: "/drahventures-payment.png",
+    tech: ["Next.js", "TypeScript", "Paystack", "Supabase", "Tailwind CSS"],
+    link: "https://drahventures-payment-bdiz.vercel.app/",
+    github: "https://github.com/DHEBIT/drahventures-payment",
+  },
   {
     id: 2,
     category: "AI Project",
@@ -21,17 +23,19 @@ const projects = [
     description: "An intelligent AI-powered assistant designed to help users with tasks, answer questions, and automate workflows. Currently in active development.",
     image: null,
     tech: ["Next.js", "TypeScript", "AI/ML", "Tailwind CSS"],
-    link: "https://github.com/CREDIT-DRAH",
+    link: "https://github.com/DHEBIT",
+    github: "https://github.com/DHEBIT",
   },
   {
-  id: 3,
-  category: "E-Commerce",
-  title: "Purple Shop — Insurance Merchandise Store",
-  description: "A fully functional e-commerce store built for Bernardventures. Features product listings pulled from a live Supabase database, shopping cart with quantity controls, and Paystack payment integration. Built with Next.js and deployed on Vercel.",
-  image: "/purple-shop.png",
-  tech: ["Next.js", "React", "Tailwind CSS", "Supabase", "Paystack"],
-  link: "https://purple-shop-1iss.vercel.app/",
-},
+    id: 3,
+    category: "E-Commerce",
+    title: "Purple Shop — Insurance Merchandise Store",
+    description: "A fully functional e-commerce store built for Bernardventures. Features product listings pulled from a live Supabase database, shopping cart with quantity controls, and Paystack payment integration. Built with Next.js and deployed on Vercel.",
+    image: "/purple-shop.png",
+    tech: ["Next.js", "React", "Tailwind CSS", "Supabase", "Paystack"],
+    link: "https://purple-shop-1iss.vercel.app/",
+    github: "https://github.com/DHEBIT/purple-shop",
+  },
 ];
 
 export default function ProjectsPage() {
@@ -101,15 +105,25 @@ export default function ProjectsPage() {
                   {project.description}
                 </p>
 
-                {/* Clean "Case Study" Link with Arrow */}
-                <Link
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-cyan-400 transition-colors mt-2"
-                >
-                  Case Study <span>&rarr;</span>
-                </Link>
+                <div className="inline-flex items-center gap-4 mt-2">
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-cyan-400 transition-colors"
+                  >
+                    Case Study <span>&rarr;</span>
+                  </Link>
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="text-gray-700 dark:text-gray-300 hover:text-cyan-400 transition-colors text-xl"
+                  >
+                    <FaGithub />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
