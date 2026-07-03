@@ -36,6 +36,16 @@ const projects = [
     link: "https://purple-shop-1iss.vercel.app/",
     github: "https://github.com/DHEBIT/purple-shop",
   },
+  {
+    id: 4,
+    category: "Full Stack",
+    title: "Happy Hour — Lunch Tracker",
+    description: "A weekly lunch ordering platform built for Hollard Insurance, replacing a manual WhatsApp-and-Excel workflow. Employees pick one meal per day from a rotating menu; admins upload the weekly menu, track orders, and export a caterer-ready sheet and monthly cost report. Includes role-based access, email/Google sign-in, and in-app notifications.",
+    image: "/happy-hour.png",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "NextAuth", "Tailwind CSS"],
+    link: "https://lunch-tracker-sand.vercel.app/",
+    github: "https://github.com/DHEBIT/lunch-tracker",
+  },
 ];
 
 export default function ProjectsPage() {
