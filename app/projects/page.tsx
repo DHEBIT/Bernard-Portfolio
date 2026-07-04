@@ -46,6 +46,16 @@ const projects = [
     link: "https://lunch-tracker-sand.vercel.app/",
     github: "https://github.com/DHEBIT/lunch-tracker",
   },
+  {
+    id: 5,
+    category: "Full Stack",
+    title: "Hollagram — Social Platform",
+    description: "A social media application built with Next.js, featuring a secure authentication gateway with email and Google sign-in options. The platform restricts all core functionality including feeds, user profiles, and messaging to verified members only. Deployed on Vercel for optimal performance with server-side rendering capabilities.",
+    image: "/hollagram.jpeg",
+    tech: ["Next.js", "TypeScript", "NextAuth", "Tailwind CSS"],
+    link: "https://hollagram.vercel.app/",
+    github: "https://github.com/DHEBIT/hollagram",
+  },
 ];
 
 export default function ProjectsPage() {
