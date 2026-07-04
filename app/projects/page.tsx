@@ -56,6 +56,16 @@ const projects = [
     link: "https://hollagram.vercel.app/",
     github: "https://github.com/DHEBIT/hollagram",
   },
+  {
+    id: 6,
+    category: "Portfolio",
+    title: "Personal Developer Portfolio",
+    description: "My personal portfolio site, built to showcase my projects and journey into software development. Built with Next.js and Tailwind CSS, featuring smooth animations and a clean, modern design.",
+    image: "/portfolio.png",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    link: "https://bernard-portfolio-zeta.vercel.app/",
+    github: "https://github.com/DHEBIT/Bernard-Portfolio",
+  },
 ];
 
 export default function ProjectsPage() {
