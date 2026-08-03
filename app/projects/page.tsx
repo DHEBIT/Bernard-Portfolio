@@ -66,6 +66,16 @@ const projects = [
     link: "https://bernard-portfolio-zeta.vercel.app/",
     github: "https://github.com/DHEBIT/Bernard-Portfolio",
   },
+  {
+  id: 7,
+  category: "Full Stack",
+  title: "Petty Cash Ledger",
+  description: "An internal petty cash management system modeled on a real company imprest accounting workflow. Employees submit expense requests with receipt uploads; finance reviews, disburses, and logs each transaction against a running ledger with GL codes for month-end reconciliation. Role-based access is enforced with PostgreSQL Row Level Security at the database level, not just the UI. Includes a searchable 9,000+ entry chart of accounts, real-time notifications, and one-click Excel export matching the company's existing reconciliation format.",
+  image: "/petty-cash-ledger.png",
+  tech: ["React", "Vite", "Supabase", "PostgreSQL", "Row Level Security"],
+  link: "https://petty-cash-app-lac.vercel.app/",
+  github: "https://github.com/DHEBIT/Petty-cash-app",
+},
 ];
 
 export default function ProjectsPage() {
