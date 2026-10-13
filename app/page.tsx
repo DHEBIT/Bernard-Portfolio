@@ -60,9 +60,10 @@ export default function Home() {
 
           {/* Bio */}
           <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-lg">
-            I&apos;m a finance professional turned software engineer based in Ghana. 
-            I strive to build immersive and beautiful web applications through carefully 
-            crafted code and user-centric design.
+           I&apos;m an Accounting and Finance professional who builds fintech solutions
+          with AI. I blend financial domain expertise with code to craft intelligent,
+           user-centric applications that make money management smarter and more
+           accessible.
           </p>
 
           {/* "Say Hello!" Button */}
