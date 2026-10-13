@@ -64,7 +64,7 @@ export default function About() {
           {/* Bio Paragraphs */}
           <div className="space-y-4 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
             <p>
-              I&apos;m <span className="text-cyan-400 font-semibold">Bernard Tetteh Drah</span>, an Accounting graduate from the University of Ghana turned AI Software Engineer. I bridge the gap between finance and technology by building robust web applications and AI-powered tools.
+              I&apos;m <span className="text-cyan-400 font-semibold">Bernard Tetteh Drah</span>, an Accounting graduate from the University of Ghana . I bridge the gap between finance and technology by building robust web applications and AI-powered tools.
             </p>
             <p>
               With a strong foundation in financial analysis, tax compliance, and a deep passion for Accounting and fintech solutions, I specialize in creating seamless, user-centric digital solutions that solve real-world business problems.
